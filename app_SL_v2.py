@@ -1,4 +1,4 @@
-# Run the code using: streamlit run /Users/gretchenvogt/Desktop/Python_scripts/Katelyn/app_SL_v2.py
+# Run the code using: streamlit run app_SL_v2.py
 
 import streamlit as st
 import os
