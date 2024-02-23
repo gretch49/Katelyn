@@ -19,6 +19,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run script
-        run: python app_SL.py
+        run: python app_SL_v2.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
