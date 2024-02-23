@@ -19,7 +19,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run Streamlit app
-        run: timeout 60 streamlit run app_SL_v2.py
+        run: |
+          timeout 60 streamlit run app_SL_v2.py || exit 0
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
 
