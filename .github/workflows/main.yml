@@ -6,7 +6,7 @@ on:
       - main  # This triggers the workflow on push events to the main branch
 
 jobs:
-  build:
+  run-script:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,7 +18,5 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Run script
-        run: python /workspaces/Katelyn/app_SL.py
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - name: Run Python script
+        run: python app_SL.py
