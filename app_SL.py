@@ -1,4 +1,4 @@
-# Run the code using: streamlit run /Users/gretchenvogt/Desktop/Python_scripts/Streamlit-gv/app_planning.py
+# Run the code using: streamlit run app_SL.py
 
 import streamlit as st
 import os
