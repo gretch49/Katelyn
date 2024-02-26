@@ -92,9 +92,9 @@ def katelyn_chatbot():
             st.chat_message(msg["role"]).write(msg["content"])
         #########################
             
-   # if new_response := st.chat_input():
-   #     st.session_state.messages.append({"role": "user", "content": new_response})
-    #    st.chat_message("user").write(new_response)
+    if new_response := st.chat_input():
+        st.session_state.messages.append({"role": "user", "content": new_response})
+        st.chat_message("user").write(new_response)
 
         ### If this is the first time the user has said something, send that message in a prompt to GPT to see how planned the user is
         if len(st.session_state.messages) == 2:
@@ -151,12 +151,16 @@ def display_itinerary(messages):
 
 
 if __name__ == "__main__":
-    if not "chat_finished" in st.session_state:  # Initialize if not present
-        st.session_state.chat_finished = False
+    st.set_page_config(layout="wide")
+    st.title("ARCHIVE: Katelyn, your Travel Assistant Chatbot")
+    st.caption("This chatbot is out-of-date. See the updated version at: https://katelyn-update.streamlit.app/")
 
-    if not st.session_state.chat_finished:
-        st.session_state.prompt = katelyn_chatbot()  # Call chatbot function if chat is not finished
+    #if not "chat_finished" in st.session_state:  # Initialize if not present
+        #st.session_state.chat_finished = False
+
+    #if not st.session_state.chat_finished:
+        #st.session_state.prompt = katelyn_chatbot()  # Call chatbot function if chat is not finished
         
     
-    else:
-        display_itinerary(st.session_state.prompt)  # Display itinerary if chat is finished
+    #else:
+        #display_itinerary(st.session_state.prompt)  # Display itinerary if chat is finished
