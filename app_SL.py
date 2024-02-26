@@ -58,8 +58,8 @@ katelyn_questions_unplanned = [
 
 def katelyn_chatbot():
     st.set_page_config(layout="wide")
-    st.title("Katelyn, your Travel Assistant Chatbot")
-    st.caption("I'll create a personalized travel itinerary in minutes.")
+    st.title("ARCHIVE: Katelyn, your Travel Assistant Chatbot")
+    st.caption("This chatbot is out-of-date. See the updated version at: https://katelyn-update.streamlit.app/")
 
     #########################
     # If the code has never been run before, say you're Katelyn
@@ -92,9 +92,9 @@ def katelyn_chatbot():
             st.chat_message(msg["role"]).write(msg["content"])
         #########################
             
-    if new_response := st.chat_input():
-        st.session_state.messages.append({"role": "user", "content": new_response})
-        st.chat_message("user").write(new_response)
+   # if new_response := st.chat_input():
+   #     st.session_state.messages.append({"role": "user", "content": new_response})
+    #    st.chat_message("user").write(new_response)
 
         ### If this is the first time the user has said something, send that message in a prompt to GPT to see how planned the user is
         if len(st.session_state.messages) == 2:
