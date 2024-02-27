@@ -13,7 +13,7 @@ load_dotenv()
 gretchens_api_key = os.getenv("OPEN_API_KEY")
 client = openai.OpenAI(api_key=gretchens_api_key)
 
-st.title("Katelyn 2.0, your Travel Assistant Chatbot")
+st.title("Katelyn 2.0, your Travel Agent Chatbot")
 st.caption("I'll create a personalized travel itinerary in minutes.")
 setup = "You are a virtual travel agent named Katelyn. You need to get answers from the user about their upcoming trip in order to make a day-by-day itinerary for them. Keep a natural conversation but make sure you ask them about their destination, who they're going with, what activities they and their companions want to do, what season, what duration, what budget, where they're traveling from, if they need transportation advice, if they need any other advice, if they have any considerations like someone who is physically disabled, and any other necessary details. Print out a day-by-day itinerary when you have all the info you need."
 
