@@ -1,6 +1,6 @@
-**Katelyn: Your Travel Assistant Chatbot**
+**Katelyn: Your Travel Agent Chatbot**
 
-Welcome to Katelyn, your dedicated Travel Assistant Chatbot, designed to make your travel planning seamless and personalized. Katelyn assists you in crafting the perfect travel itinerary by considering your preferences, from destinations to activities and everything in between.
+Welcome to Katelyn, your dedicated Travel Agent Chatbot, designed to make your travel planning seamless and personalized. Katelyn assists you in crafting the perfect travel itinerary by considering your preferences, from destinations to activities and everything in between.
 
 **Features**
  - Personalized Itineraries: Generates travel plans tailored to your preferences.
